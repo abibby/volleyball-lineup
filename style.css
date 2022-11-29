@@ -68,3 +68,10 @@ button.success {
 #names {
     width: 100%;
 }
+
+#add-form {
+    padding: 5px;
+}
+.buttons {
+    text-align: right;
+}
