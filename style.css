@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+.players.on {
+    display: grid;
+
+    grid-template-areas: 
+        'p1 p2 p3'
+        'p6 p5 p4';
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.players.on .player {
+    background-color: #80bccf;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: rgba(0,0,0,0.3) 1px 1px 4px 0px;
+}
+
+.player:nth-child(1) {
+    grid-area: p1;
+}
+.player:nth-child(2) {
+    grid-area: p2;
+}
+.player:nth-child(3) {
+    grid-area: p3;
+}
+.player:nth-child(4) {
+    grid-area: p4;
+}
+.player:nth-child(5) {
+    grid-area: p5;
+}
+.player:nth-child(6) {
+    grid-area: p6;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: rgba(0,0,0,0.3) 1px 1px 4px 0px;
+}
+button.success {
+    background-color: #90cf80;
+}
+
+.popup {
+    display: none;
+}
+.popup.open {
+    position: fixed;
+    background-color: #fff;
+    display: block;
+    z-index: 11;
+    box-shadow: rgba(0,0,0,0.5) 0px 0px 0px 100vmax;
+    top: 20px;
+    /* bottom: 20px; */
+    left: 20px;
+    right: 20px;
+}
+
+#names {
+    width: 100%;
+}
